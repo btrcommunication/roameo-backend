@@ -1337,6 +1337,16 @@ router.put("/ads/:id/approve", exports.approveAd);
 router.put("/ads/:id/disapprove", exports.disapproveAd);
 router.patch("/ads/:id/toggle", exports.toggleAdStatus);
 
+// Alias routes for /vendor/ads
+router.get("/vendor/ads", exports.getAds);
+router.get("/vendor/ads/:id", exports.getAdById);
+router.post("/vendor/ads", upload.single('image'), exports.createAd);
+router.put("/vendor/ads/:id", upload.single('image'), exports.updateAd);
+router.delete("/vendor/ads/:id", exports.deleteAd);
+router.put("/vendor/ads/:id/approve", exports.approveAd);
+router.put("/vendor/ads/:id/disapprove", exports.disapproveAd);
+router.patch("/vendor/ads/:id/toggle", exports.toggleAdStatus);
+
 
 // Public listing dynamic routes (Keep at bottom so static paths aren't overridden as IDs)
 router.get("/:id", exports.getListingById);
