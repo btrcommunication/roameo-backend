@@ -1,0 +1,7 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/guruuzld/roameomobileapp.braventra.in"
+PassengerBaseURI "/"
+PassengerNodejs "/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/bin/node"
+PassengerAppType node
+PassengerStartupFile index.js
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END

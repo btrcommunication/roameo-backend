@@ -1,0 +1,365 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Roameo API",
+    "version": "1.0.0",
+    "description": "Backend API documentation for the Roameo platform"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5000",
+      "description": "Local Development Server"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT",
+        "description": "Enter your JWT token (without 'Bearer ' prefix)"
+      }
+    }
+  },
+  "security": [],
+  "paths": {
+    "/api/profile": {
+      "get": {
+        "summary": "Get the logged-in user's profile",
+        "tags": [
+          "Profile"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Profile details loaded",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "example": {
+                    "status": "success",
+                    "message": "Profile details loaded",
+                    "data": {
+                      "id": 1,
+                      "name": "John Doe",
+                      "email": "johndoe@example.com",
+                      "phone": "+1 212-555-0000",
+                      "address_line1": "123 Madison Ave",
+                      "address_line2": "Apt 4B",
+                      "city": "New York",
+                      "district": "Manhattan",
+                      "pincode": "10016",
+                      "country": "USA",
+                      "role": "customer",
+                      "created_at": "2026-07-04T12:00:00.000Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "No token or invalid token"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        }
+      }
+    },
+    "/api/profile/edit-info": {
+      "put": {
+        "summary": "Update personal info (name, email, phone)",
+        "tags": [
+          "Profile"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "Jane Doe"
+                  },
+                  "email": {
+                    "type": "string",
+                    "example": "janedoe@example.com"
+                  },
+                  "phone": {
+                    "type": "string",
+                    "example": "+1 212-555-9999"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Personal information updated successfully"
+          },
+          "400": {
+            "description": "No fields provided or email conflict"
+          },
+          "401": {
+            "description": "No token or invalid token"
+          }
+        }
+      }
+    },
+    "/api/profile/edit-address": {
+      "put": {
+        "summary": "Update user address",
+        "tags": [
+          "Profile"
+        ],
+        "security": [
+          {
+            "BearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "address_line1": {
+                    "type": "string",
+                    "example": "456 Park Ave"
+                  },
+                  "address_line2": {
+                    "type": "string",
+                    "example": "Suite 10"
+                  },
+                  "city": {
+                    "type": "string",
+                    "example": "New York"
+                  },
+                  "district": {
+                    "type": "string",
+                    "example": "Manhattan"
+                  },
+                  "pincode": {
+                    "type": "string",
+                    "example": "10022"
+                  },
+                  "country": {
+                    "type": "string",
+                    "example": "USA"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Address updated successfully"
+          },
+          "400": {
+            "description": "Missing required address fields"
+          },
+          "401": {
+            "description": "No token or invalid token"
+          }
+        }
+      }
+    },
+    "/api/auth/signup": {
+      "post": {
+        "summary": "Register a new user",
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "name",
+                  "email",
+                  "password",
+                  "phone"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "John Doe"
+                  },
+                  "email": {
+                    "type": "string",
+                    "example": "johndoe@example.com"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "StrongPassword123!"
+                  },
+                  "phone": {
+                    "type": "string",
+                    "example": "+1 212-555-0000"
+                  },
+                  "role": {
+                    "type": "string",
+                    "enum": [
+                      "admin",
+                      "vendor",
+                      "customer"
+                    ],
+                    "example": "customer"
+                  },
+                  "address_line1": {
+                    "type": "string",
+                    "example": "123 Madison Ave"
+                  },
+                  "address_line2": {
+                    "type": "string",
+                    "example": "Apt 4B"
+                  },
+                  "city": {
+                    "type": "string",
+                    "example": "New York"
+                  },
+                  "district": {
+                    "type": "string",
+                    "example": "Manhattan"
+                  },
+                  "pincode": {
+                    "type": "string",
+                    "example": "10016"
+                  },
+                  "country": {
+                    "type": "string",
+                    "example": "USA"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Account created successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "example": {
+                    "status": "success",
+                    "message": "Account created successfully!",
+                    "token": "eyJhbGciOiJIUzI1NiIs...",
+                    "data": {
+                      "user_id": 1,
+                      "name": "John Doe",
+                      "email": "johndoe@example.com",
+                      "phone": "+1 212-555-0000",
+                      "role": "customer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Validation error or email already exists"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/auth/login": {
+      "post": {
+        "summary": "Login with email and password",
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "email",
+                  "password"
+                ],
+                "properties": {
+                  "email": {
+                    "type": "string",
+                    "example": "johndoe@example.com"
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "StrongPassword123!"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Logged in successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "example": {
+                    "status": "success",
+                    "message": "Logged in successfully!",
+                    "token": "eyJhbGciOiJIUzI1NiIs...",
+                    "data": {
+                      "user_id": 1,
+                      "name": "John Doe",
+                      "email": "johndoe@example.com",
+                      "phone": "+1 212-555-0000",
+                      "role": "customer",
+                      "city": "New York"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Invalid email or password"
+          },
+          "403": {
+            "description": "Account deactivated"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Profile",
+      "description": "User profile management (requires JWT token)"
+    },
+    {
+      "name": "Auth",
+      "description": "User authentication endpoints"
+    }
+  ]
+}

@@ -1,0 +1,2575 @@
+Get Categories Error: Error: connect ECONNREFUSED ::1:3309
+    at Category.getAll (/home/guruuzld/roameomobileapp.braventra.in/models/Category.js:20:35)
+    at exports.getAllCategories (/home/guruuzld/roameomobileapp.braventra.in/controllers/categoryController.js:9:43)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5) {
+  errno: -111,
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '::1',
+  port: 3309,
+  fatal: true
+}
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'dotenv'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:1:1)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'dotenv'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:1:1)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'dotenv'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:1:1)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'dotenv'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:1:1)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'dotenv'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:1:1)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'dotenv'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:1:1)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module './routes/authRoutes'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:23:20)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module './routes/authRoutes'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:23:20)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+/home/guruuzld/roameomobileapp.braventra.in/index.js:31
+const listingRoutes = require("./routes/listingVendorRoutes");
+      ^
+
+SyntaxError: Identifier 'listingRoutes' has already been declared
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:51:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.8
+/home/guruuzld/roameomobileapp.braventra.in/index.js:31
+const listingRoutes = require("./routes/listingVendorRoutes");
+      ^
+
+SyntaxError: Identifier 'listingRoutes' has already been declared
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:51:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.8
+/home/guruuzld/roameomobileapp.braventra.in/index.js:31
+const listingRoutes = require("./routes/listingVendorRoutes");
+      ^
+
+SyntaxError: Identifier 'listingRoutes' has already been declared
+    at internalCompileFunction (node:internal/vm:76:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1283:20)
+    at Module._compile (node:internal/modules/cjs/loader:1328:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:51:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+Node.js v18.20.8
+Error: Multipart: Boundary not found
+    at new Multipart (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/types/multipart.js:233:13)
+    at getInstance (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/index.js:33:12)
+    at module.exports (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/index.js:56:10)
+    at multerMiddleware (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/lib/make-middleware.js:133:16)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js:2:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+Vendor signup error: Error: Unknown column 'password_hash' in 'INSERT INTO'
+    at /home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js:126:47 {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'password_hash' in 'INSERT INTO'",
+  sql: 'INSERT INTO users (email, password_hash, role, is_active) \n' +
+    "             VALUES ('wowmomo@gmail.com', '$2b$10$tLLu2kC.UfJmO3MgTmB5su.KPMddwahyGdCq36Gzu1lo9x/13jl..', 'vendor', 1)"
+}
+Vendor signup error: Error: Unknown column 'password_hash' in 'INSERT INTO'
+    at /home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js:126:47 {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'password_hash' in 'INSERT INTO'",
+  sql: 'INSERT INTO users (email, password_hash, role, is_active) \n' +
+    "             VALUES ('wowmomo@gmail.com', '$2b$10$L/M3v0FGGqYnmlRgKRs2x.r5HMuFF/fhqKuU3aHvCxENfwQ9LaoUi', 'vendor', 1)"
+}
+Vendor signup error: Error: Unknown column 'password_hash' in 'INSERT INTO'
+    at /home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js:126:47 {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'password_hash' in 'INSERT INTO'",
+  sql: 'INSERT INTO users (email, password_hash, role, is_active) \n' +
+    "             VALUES ('wowmomo@gmail.com', '$2b$10$UlWHNG1rJmiNiOKmmq/27uE7qVoz9m5x7U528F3BWsGrS6KSnBm7C', 'vendor', 1)"
+}
+Vendor signup error: Error: Unknown column 'password_hash' in 'INSERT INTO'
+    at /home/guruuzld/roameomobileapp.braventra.in/routes/vendorRoutes.js:126:47 {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'password_hash' in 'INSERT INTO'",
+  sql: 'INSERT INTO users (email, password_hash, role, is_active) \n' +
+    "             VALUES ('mm@gmail.com', '$2b$10$hIXwQm0u1alaj3cyqRjCXOgWJgWs3MXa5FNPLoMdt1y3uKauaqcNK', 'vendor', 1)"
+}
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+Get Vendor Error: Error: Unknown column 'v.city' in 'SELECT'
+    at Object.getVendorById (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:96:35)
+    at exports.getVendorById (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:189:42)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at param (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:600:14)
+    at param (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:610:14) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'v.city' in 'SELECT'",
+  sql: 'SELECT \n' +
+    '                v.id, v.name, v.email, v.phone, v.address, v.city, v.state, v.country,\n' +
+    '                v.category, v.description, v.website, v.logo_url,\n' +
+    '                v.approval_status, v.disapproval_reason,\n' +
+    '                v.created_at, v.updated_at,\n' +
+    '                (SELECT COUNT(*) FROM vendor_listings vl WHERE vl.vendor_id = v.id) as total_listings,\n' +
+    '                (SELECT COUNT(*) FROM vendor_listings vl WHERE vl.vendor_id = v.id AND vl.is_active = 1) as active_listings\n' +
+    '             FROM vendors v\n' +
+    "             WHERE v.id = 'vendors'"
+}
+Get Vendor Error: Error: Unknown column 'v.city' in 'SELECT'
+    at Object.getVendorById (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:96:35)
+    at exports.getVendorById (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:189:42)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at param (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:600:14)
+    at param (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:610:14) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'v.city' in 'SELECT'",
+  sql: 'SELECT \n' +
+    '                v.id, v.name, v.email, v.phone, v.address, v.city, v.state, v.country,\n' +
+    '                v.category, v.description, v.website, v.logo_url,\n' +
+    '                v.approval_status, v.disapproval_reason,\n' +
+    '                v.created_at, v.updated_at,\n' +
+    '                (SELECT COUNT(*) FROM vendor_listings vl WHERE vl.vendor_id = v.id) as total_listings,\n' +
+    '                (SELECT COUNT(*) FROM vendor_listings vl WHERE vl.vendor_id = v.id AND vl.is_active = 1) as active_listings\n' +
+    '             FROM vendors v\n' +
+    "             WHERE v.id = 'vendors'"
+}
+Get Vendor Error: Error: Unknown column 'v.city' in 'SELECT'
+    at Object.getVendorById (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:96:35)
+    at exports.getVendorById (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:189:42)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at param (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:600:14)
+    at param (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:610:14) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'v.city' in 'SELECT'",
+  sql: 'SELECT \n' +
+    '                v.id, v.name, v.email, v.phone, v.address, v.city, v.state, v.country,\n' +
+    '                v.category, v.description, v.website, v.logo_url,\n' +
+    '                v.approval_status, v.disapproval_reason,\n' +
+    '                v.created_at, v.updated_at,\n' +
+    '                (SELECT COUNT(*) FROM vendor_listings vl WHERE vl.vendor_id = v.id) as total_listings,\n' +
+    '                (SELECT COUNT(*) FROM vendor_listings vl WHERE vl.vendor_id = v.id AND vl.is_active = 1) as active_listings\n' +
+    '             FROM vendors v\n' +
+    "             WHERE v.id = 'vendors'"
+}
+Get Vendor Error: Error: Unknown column 'v.city' in 'SELECT'
+    at Object.getVendorById (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:96:35)
+    at exports.getVendorById (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:189:42)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at param (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:600:14)
+    at param (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:610:14) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'v.city' in 'SELECT'",
+  sql: 'SELECT \n' +
+    '                v.id, v.name, v.email, v.phone, v.address, v.city, v.state, v.country,\n' +
+    '                v.category, v.description, v.website, v.logo_url,\n' +
+    '                v.approval_status, v.disapproval_reason,\n' +
+    '                v.created_at, v.updated_at,\n' +
+    '                (SELECT COUNT(*) FROM vendor_listings vl WHERE vl.vendor_id = v.id) as total_listings,\n' +
+    '                (SELECT COUNT(*) FROM vendor_listings vl WHERE vl.vendor_id = v.id AND vl.is_active = 1) as active_listings\n' +
+    '             FROM vendors v\n' +
+    "             WHERE v.id = 'vendors'"
+}
+Get Vendors Error: Error: Unknown column 'v.city' in 'SELECT'
+    at Object.getAllVendors (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:90:35)
+    at exports.getAllVendors (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:164:43)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'v.city' in 'SELECT'",
+  sql: '\n' +
+    '            SELECT \n' +
+    '                v.id, v.name, v.email, v.phone, v.address, v.city, v.state, v.country,\n' +
+    '                v.category, v.description, v.website, v.logo_url,\n' +
+    '                v.approval_status, v.disapproval_reason,\n' +
+    '                v.created_at, v.updated_at,\n' +
+    '                (SELECT COUNT(*) FROM vendor_listings vl WHERE vl.vendor_id = v.id) as total_listings,\n' +
+    '                (SELECT COUNT(*) FROM vendor_listings vl WHERE vl.vendor_id = v.id AND vl.is_active = 1) as active_listings\n' +
+    '            FROM vendors v\n' +
+    '            WHERE 1=1\n' +
+    '         ORDER BY v.created_at DESC'
+}
+Get Vendors Error: Error: Unknown column 'v.city' in 'SELECT'
+    at Object.getAllVendors (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:90:35)
+    at exports.getAllVendors (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:164:43)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'v.city' in 'SELECT'",
+  sql: '\n' +
+    '            SELECT \n' +
+    '                v.id, v.name, v.email, v.phone, v.address, v.city, v.state, v.country,\n' +
+    '                v.category, v.description, v.website, v.logo_url,\n' +
+    '                v.approval_status, v.disapproval_reason,\n' +
+    '                v.created_at, v.updated_at,\n' +
+    '                (SELECT COUNT(*) FROM vendor_listings vl WHERE vl.vendor_id = v.id) as total_listings,\n' +
+    '                (SELECT COUNT(*) FROM vendor_listings vl WHERE vl.vendor_id = v.id AND vl.is_active = 1) as active_listings\n' +
+    '            FROM vendors v\n' +
+    '            WHERE 1=1\n' +
+    '         ORDER BY v.created_at DESC'
+}
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:157:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/route.js:117:3)
+    at handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:435:11)
+    at Layer.handleRequest (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/lib/layer.js:152:17)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:295:15
+    at processParams (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:582:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:291:5)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/router/index.js:186:3)
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'express-validator'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:5:36)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'express-validator'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:5:36)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'express-validator'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:5:36)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'express-validator'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:5:36)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'express-validator'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:5:36)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'express-validator'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:5:36)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+node:internal/modules/cjs/loader:1143
+  throw err;
+  ^
+
+Error: Cannot find module 'bcryptjs'
+Require stack:
+- /home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js
+- /home/guruuzld/roameomobileapp.braventra.in/index.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js:3:16)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/guruuzld/roameomobileapp.braventra.in/routes/adminAuthRoutes.js',
+    '/home/guruuzld/roameomobileapp.braventra.in/index.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+Node.js v18.20.8
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/cartRoutes.js:296:8)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:35:20)
+
+Node.js v18.20.8
+/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/cartRoutes.js:296:8)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:35:20)
+
+Node.js v18.20.8
+/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/cartRoutes.js:296:8)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:35:20)
+
+Node.js v18.20.8
+/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/cartRoutes.js:296:8)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:35:20)
+
+Node.js v18.20.8
+/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/cartRoutes.js:296:8)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:35:20)
+
+Node.js v18.20.8
+/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/cartRoutes.js:296:8)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:35:20)
+
+Node.js v18.20.8
+/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/cartRoutes.js:296:8)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:35:20)
+
+Node.js v18.20.8
+/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/cartRoutes.js:296:8)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:35:20)
+
+Node.js v18.20.8
+/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/cartRoutes.js:296:8)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:35:20)
+
+Node.js v18.20.8
+/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/cartRoutes.js:296:8)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:35:20)
+
+Node.js v18.20.8
+/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as post] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/cartRoutes.js:296:8)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:35:20)
+
+Node.js v18.20.8
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Error: Multipart: Boundary not found
+    at new Multipart (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/types/multipart.js:233:13)
+    at getInstance (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/index.js:33:12)
+    at module.exports (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/index.js:56:10)
+    at multerMiddleware (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/lib/make-middleware.js:28:16)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+Error: Multipart: Boundary not found
+    at new Multipart (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/types/multipart.js:233:13)
+    at getInstance (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/index.js:33:12)
+    at module.exports (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/index.js:56:10)
+    at multerMiddleware (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/lib/make-middleware.js:28:16)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as get] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:941:8)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:31:29)
+
+Node.js v18.20.8
+/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as get] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:941:8)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:31:29)
+
+Node.js v18.20.8
+/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as get] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:941:8)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:31:29)
+
+Node.js v18.20.8
+/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216
+        throw new Error(msg);
+        ^
+
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:216:15)
+    at proto.<computed> [as get] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:521:19)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:941:8)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/guruuzld/roameomobileapp.braventra.in/index.js:31:29)
+
+Node.js v18.20.8
+PayloadTooLargeError: request entity too large
+    at readStream (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/raw-body/index.js:163:17)
+    at getRawBody (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/raw-body/index.js:116:12)
+    at read (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/body-parser/lib/read.js:79:3)
+    at jsonParser (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/body-parser/lib/types/json.js:142:5)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at cors (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/cors/lib/index.js:188:7)
+PayloadTooLargeError: request entity too large
+    at readStream (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/raw-body/index.js:163:17)
+    at getRawBody (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/raw-body/index.js:116:12)
+    at read (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/body-parser/lib/read.js:79:3)
+    at jsonParser (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/body-parser/lib/types/json.js:142:5)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at cors (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/cors/lib/index.js:188:7)
+PayloadTooLargeError: request entity too large
+    at readStream (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/raw-body/index.js:163:17)
+    at getRawBody (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/raw-body/index.js:116:12)
+    at read (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/body-parser/lib/read.js:79:3)
+    at jsonParser (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/body-parser/lib/types/json.js:142:5)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at cors (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/cors/lib/index.js:188:7)
+Unhandled Server Error: Error: Multipart: Boundary not found
+    at new Multipart (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/types/multipart.js:233:13)
+    at getInstance (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/index.js:33:12)
+    at module.exports (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/index.js:56:10)
+    at multerMiddleware (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/lib/make-middleware.js:28:16)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+Unhandled Server Error: Error: Multipart: Boundary not found
+    at new Multipart (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/types/multipart.js:233:13)
+    at getInstance (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/index.js:33:12)
+    at module.exports (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/index.js:56:10)
+    at multerMiddleware (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/lib/make-middleware.js:28:16)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+Unhandled Server Error: Error: Multipart: Boundary not found
+    at new Multipart (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/types/multipart.js:233:13)
+    at getInstance (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/index.js:33:12)
+    at module.exports (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/index.js:56:10)
+    at multerMiddleware (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/lib/make-middleware.js:28:16)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+Unhandled Server Error: Error: Multipart: Boundary not found
+    at new Multipart (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/types/multipart.js:233:13)
+    at getInstance (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/index.js:33:12)
+    at module.exports (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/index.js:56:10)
+    at multerMiddleware (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/lib/make-middleware.js:28:16)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+Unhandled Server Error: MulterError: File too large
+    at abortWithCode (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/lib/make-middleware.js:73:22)
+    at FileStream.<anonymous> (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/lib/make-middleware.js:136:11)
+    at FileStream.emit (node:events:517:28)
+    at SBMH.ssCb [as _cb] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/types/multipart.js:479:32)
+    at feed (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/streamsearch/lib/sbmh.js:248:10)
+    at SBMH.push (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/streamsearch/lib/sbmh.js:104:16)
+    at Multipart._write (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/busboy/lib/types/multipart.js:567:19)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10) {
+  code: 'LIMIT_FILE_SIZE',
+  field: 'image',
+  storageErrors: []
+}
+Login error: Error: Unknown column 'password' in 'SELECT'
+    at /home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:142:38
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'password' in 'SELECT'",
+  sql: 'SELECT id, name, email, password, phone, address, \n' +
+    '                    business_description, approval_status, is_active \n' +
+    "             FROM vendors WHERE email = 'vendor1@gmail.com'"
+}
+Signup error: Error: Unknown column 'password' in 'INSERT INTO'
+    at /home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:93:37 {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'password' in 'INSERT INTO'",
+  sql: 'INSERT INTO vendors (\n' +
+    '                name, email, password, phone, address, \n' +
+    '                business_description, latitude, longitude, \n' +
+    '                service_radius_meters, approval_status, created_at\n' +
+    "            ) VALUES ('mmnmn jjh', 'mmm@gmail.com', '$2b$10$ApgQF7HDViKA6AwJxQPOzOuYdm.47hdYQjdGG2ecVL1aW3rwRxFjy', '8779879879', 'bjhjkhkjhj', 'jnkj jbjbj', 22.66, 44.66, 5000, 'pending', NOW())"
+}
+Signup error: Error: Unknown column 'password' in 'INSERT INTO'
+    at /home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:93:37 {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'password' in 'INSERT INTO'",
+  sql: 'INSERT INTO vendors (\n' +
+    '                name, email, password, phone, address, \n' +
+    '                business_description, latitude, longitude, \n' +
+    '                service_radius_meters, approval_status, created_at\n' +
+    "            ) VALUES ('mmnmn jjh', 'mmm@gmail.com', '$2b$10$h.Ptg0a5o6PI/Ft9eGmNbOzIZOFSF7/UnRYWltbcLol/YqPIm33ai', '8779879879', 'bjhjkhkjhj', 'jnkj jbjbj', 22.66, 44.66, 5000, 'pending', NOW())"
+}
+Signup error: Error: Unknown column 'password' in 'INSERT INTO'
+    at /home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:93:37 {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'password' in 'INSERT INTO'",
+  sql: 'INSERT INTO vendors (\n' +
+    '                name, email, password, phone, address, \n' +
+    '                business_description, latitude, longitude, \n' +
+    '                service_radius_meters, approval_status, created_at\n' +
+    "            ) VALUES ('ffre rewre', 'wwww@gmail.com', '$2b$10$s187UqHw1kB.Mpp1s6d2suQqTA5GEZRmR2Dg.48dlFO6PvWuoTFZ6', '5544556666', 'dfttr', 'tytyty', 22.44, 44.55, 50005, 'pending', NOW())"
+}
+Login error: Error: Unknown column 'password' in 'SELECT'
+    at /home/guruuzld/roameomobileapp.braventra.in/routes/listingVendorRoutes.js:142:38
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12) {
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlState: '42S22',
+  sqlMessage: "Unknown column 'password' in 'SELECT'",
+  sql: 'SELECT id, name, email, password, phone, address, \n' +
+    '                    business_description, approval_status, is_active \n' +
+    "             FROM vendors WHERE email = 'vendor1@gmail.com'"
+}
+Create Coupon Error: Error: Column 'valid_from' cannot be null
+    at Coupon.create (/home/guruuzld/roameomobileapp.braventra.in/models/Coupon.js:155:37)
+    at exports.createCoupon (/home/guruuzld/roameomobileapp.braventra.in/routes/couponRoutes.js:122:37)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at done (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/lib/make-middleware.js:47:7)
+    at indicateDone (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/lib/make-middleware.js:51:68)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/lib/make-middleware.js:157:11
+    at WriteStream.<anonymous> (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:529:35)
+    at finish (node:internal/streams/writable:748:10) {
+  code: 'ER_BAD_NULL_ERROR',
+  errno: 1048,
+  sqlState: '23000',
+  sqlMessage: "Column 'valid_from' cannot be null",
+  sql: 'INSERT INTO coupons (\n' +
+    '                title, subtitle, description, banner_image_url, coupon_code,\n' +
+    '                vendor_id, valid_from, valid_until, priority, campaign_type,\n' +
+    '                city, is_active, is_approved\n' +
+    "            ) VALUES ('Why do we use it?', 'long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem', 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \\'Content here, content here\\', making it look like read', '/uploads/coupons/coupon-1787334386324-249238959', 'CM16ZDB', '16', NULL, NULL, 0, 'coupon', NULL, 1, 0)"
+}
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Failed to create coupon Error: Cannot add or update a child row: a foreign key constraint fails (`guruuzld_roameomobileapp`.`coupons`, CONSTRAINT `fk_coupons_vendor` FOREIGN KEY (`vendor_id`) REFERENCES `vendors` (`id`))
+    at Coupon.create (/home/guruuzld/roameomobileapp.braventra.in/models/Coupon.js:249:37)
+    at createCoupon (/home/guruuzld/roameomobileapp.braventra.in/routes/couponRoutes.js:223:37)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at /home/guruuzld/roameomobileapp.braventra.in/routes/couponRoutes.js:73:28
+    at done (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/lib/make-middleware.js:47:7)
+    at indicateDone (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/lib/make-middleware.js:51:68)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/lib/make-middleware.js:157:11
+    at WriteStream.<anonymous> (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/multer/storage/disk.js:43:9)
+    at WriteStream.emit (node:events:529:35) {
+  code: 'ER_NO_REFERENCED_ROW_2',
+  errno: 1452,
+  sqlState: '23000',
+  sqlMessage: 'Cannot add or update a child row: a foreign key constraint fails (`guruuzld_roameomobileapp`.`coupons`, CONSTRAINT `fk_coupons_vendor` FOREIGN KEY (`vendor_id`) REFERENCES `vendors` (`id`))',
+  sql: '\n' +
+    '                INSERT INTO coupons (\n' +
+    '                    title,\n' +
+    '                    subtitle,\n' +
+    '                    description,\n' +
+    '                    banner_image_url,\n' +
+    '                    coupon_code,\n' +
+    '                    vendor_id,\n' +
+    '                    category_id,\n' +
+    '                    valid_from,\n' +
+    '                    valid_until,\n' +
+    '                    max_quantity,\n' +
+    '                    priority,\n' +
+    '                    campaign_type,\n' +
+    '                    city,\n' +
+    '                    is_active,\n' +
+    '                    is_approved\n' +
+    '                )\n' +
+    "                VALUES ('Test', NULL, 'Bonn', '/uploads/coupons/coupon-1788919689132-188863840', NULL, '19', '3', '2026-09-09 00:00:00.000', '2026-09-11 00:00:00.000', 2, 0, 'coupon', NULL, 1, 0)\n" +
+    '            '
+}
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Cart error: Error: Table 'guruuzld_roameomobileapp.coupon_orders' doesn't exist
+    at /home/guruuzld/roameomobileapp.braventra.in/routes/cartRoutes.js:305:33
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/guruuzld/roameomobileapp.braventra.in/routes/cartRoutes.js:93:5 {
+  code: 'ER_NO_SUCH_TABLE',
+  errno: 1146,
+  sqlState: '42S02',
+  sqlMessage: "Table 'guruuzld_roameomobileapp.coupon_orders' doesn't exist",
+  sql: 'SELECT id, items, total_items, total_amount, currency, status, payment_status, created_at\n' +
+    "       FROM coupon_orders WHERE user_id = 1 AND request_id = 'checkout-1789130159854-qmrp9gswote' FOR UPDATE"
+}
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
+Get Profile Error: TypeError: Cannot read properties of undefined (reading 'id')
+    at exports.getUserProfile (/home/guruuzld/roameomobileapp.braventra.in/controllers/profileController.js:9:51)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/layer.js:95:5)
+    at /home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/guruuzld/nodevenv/roameomobileapp.braventra.in/18/lib/node_modules/express/lib/router/index.js:47:12)
