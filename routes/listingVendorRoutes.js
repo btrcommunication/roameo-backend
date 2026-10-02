@@ -934,9 +934,11 @@ exports.getAds = async (req, res) => {
     try {
         const { ad_type, is_active, vendor_id } = req.query;
         let query = `
-            SELECT a.*, v.name as vendor_name 
+            SELECT a.*, v.name as vendor_name, c.category_name as category_name, cp.title as coupon_title
             FROM ads a
             LEFT JOIN vendors v ON a.vendor_id = v.id
+            LEFT JOIN categories c ON a.category_id = c.id
+            LEFT JOIN coupons cp ON a.coupon_id = cp.id
             WHERE 1=1
         `;
         const params = [];
@@ -978,9 +980,11 @@ exports.getAdById = async (req, res) => {
     try {
         const { id } = req.params;
         const [rows] = await pool.query(
-            `SELECT a.*, v.name as vendor_name 
+            `SELECT a.*, v.name as vendor_name, c.category_name as category_name, cp.title as coupon_title
              FROM ads a
              LEFT JOIN vendors v ON a.vendor_id = v.id
+             LEFT JOIN categories c ON a.category_id = c.id
+             LEFT JOIN coupons cp ON a.coupon_id = cp.id
              WHERE a.id = ?`,
             [id]
         );
@@ -1022,7 +1026,13 @@ exports.createAd = async (req, res) => {
             end_date,
             campaign_type,
             price,
-            discount
+            discount,
+            discount_type,
+            target_type,
+            category_ids,
+            coupon_ids,
+            category_id,
+            coupon_id
         } = req.body;
 
         const imageFile = req.file;
@@ -1039,12 +1049,20 @@ exports.createAd = async (req, res) => {
             imageUrl = await saveImage(imageFile);
         }
 
+        let normalizedTargetType = target_type || 'all';
+        let normalizedCategoryIds = category_ids ? (typeof category_ids === 'object' ? JSON.stringify(category_ids) : String(category_ids)) : null;
+        let normalizedCouponIds = coupon_ids ? (typeof coupon_ids === 'object' ? JSON.stringify(coupon_ids) : String(coupon_ids)) : null;
+        let primaryCategoryId = category_id ? Number(category_id) : null;
+        let primaryCouponId = coupon_id ? Number(coupon_id) : null;
+        let normalizedDiscountType = discount_type === 'lumpsum' ? 'lumpsum' : 'percentage';
+
         const [result] = await pool.query(
             `INSERT INTO ads (
                 title, description, image_url, ad_type, vendor_id, 
                 coupon_code, link_url, points_required, display_order, 
-                is_active, start_date, end_date, campaign_type, price, discount
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+                is_active, start_date, end_date, campaign_type, price, discount, discount_type,
+                target_type, category_ids, coupon_ids, category_id, coupon_id
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
             [
                 title,
                 description || null,
@@ -1060,14 +1078,22 @@ exports.createAd = async (req, res) => {
                 end_date || null,
                 campaign_type || 'featured',
                 price || null,
-                discount || null
+                discount || null,
+                normalizedDiscountType,
+                normalizedTargetType,
+                normalizedCategoryIds,
+                normalizedCouponIds,
+                primaryCategoryId,
+                primaryCouponId
             ]
         );
 
         const [newAd] = await pool.query(
-            `SELECT a.*, v.name as vendor_name 
+            `SELECT a.*, v.name as vendor_name, c.category_name as category_name, cp.title as coupon_title
              FROM ads a
              LEFT JOIN vendors v ON a.vendor_id = v.id
+             LEFT JOIN categories c ON a.category_id = c.id
+             LEFT JOIN coupons cp ON a.coupon_id = cp.id
              WHERE a.id = ?`,
             [result.insertId]
         );
@@ -1104,7 +1130,13 @@ exports.updateAd = async (req, res) => {
             end_date,
             campaign_type,
             price,
-            discount
+            discount,
+            discount_type,
+            target_type,
+            category_ids,
+            coupon_ids,
+            category_id,
+            coupon_id
         } = req.body;
 
         const imageFile = req.file;
@@ -1129,6 +1161,13 @@ exports.updateAd = async (req, res) => {
             imageUrl = await saveImage(imageFile);
         }
 
+        let normalizedTargetType = target_type !== undefined ? target_type : existingAd[0].target_type;
+        let normalizedCategoryIds = category_ids !== undefined ? (typeof category_ids === 'object' ? JSON.stringify(category_ids) : String(category_ids)) : existingAd[0].category_ids;
+        let normalizedCouponIds = coupon_ids !== undefined ? (typeof coupon_ids === 'object' ? JSON.stringify(coupon_ids) : String(coupon_ids)) : existingAd[0].coupon_ids;
+        let primaryCategoryId = category_id !== undefined ? (category_id ? Number(category_id) : null) : existingAd[0].category_id;
+        let primaryCouponId = coupon_id !== undefined ? (coupon_id ? Number(coupon_id) : null) : existingAd[0].coupon_id;
+        let normalizedDiscountType = discount_type !== undefined ? (discount_type === 'lumpsum' ? 'lumpsum' : 'percentage') : existingAd[0].discount_type;
+
         await pool.query(
             `UPDATE ads SET
                 title = COALESCE(?, title),
@@ -1146,6 +1185,12 @@ exports.updateAd = async (req, res) => {
                 campaign_type = COALESCE(?, campaign_type),
                 price = COALESCE(?, price),
                 discount = COALESCE(?, discount),
+                discount_type = COALESCE(?, discount_type),
+                target_type = ?,
+                category_ids = ?,
+                coupon_ids = ?,
+                category_id = ?,
+                coupon_id = ?,
                 updated_at = NOW()
             WHERE id = ?`,
             [
@@ -1164,14 +1209,22 @@ exports.updateAd = async (req, res) => {
                 campaign_type,
                 price,
                 discount,
+                normalizedDiscountType,
+                normalizedTargetType,
+                normalizedCategoryIds,
+                normalizedCouponIds,
+                primaryCategoryId,
+                primaryCouponId,
                 id
             ]
         );
 
         const [updatedAd] = await pool.query(
-            `SELECT a.*, v.name as vendor_name 
+            `SELECT a.*, v.name as vendor_name, c.category_name as category_name, cp.title as coupon_title
              FROM ads a
              LEFT JOIN vendors v ON a.vendor_id = v.id
+             LEFT JOIN categories c ON a.category_id = c.id
+             LEFT JOIN coupons cp ON a.coupon_id = cp.id
              WHERE a.id = ?`,
             [id]
         );
@@ -1311,6 +1364,307 @@ exports.toggleAdStatus = async (req, res) => {
     }
 };
 
+exports.recordAdImpression = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const { user_id } = req.body;
+        const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress || null;
+
+        await pool.query(
+            `INSERT INTO ad_events (ad_id, event_type, user_id, ip_address) VALUES (?, 'impression', ?, ?)`,
+            [id, user_id || null, ip]
+        );
+
+        return res.status(200).json({
+            status: "success",
+            message: "Impression recorded"
+        });
+    } catch (err) {
+        console.error("Record Impression Error:", err);
+        return res.status(500).json({
+            status: "error",
+            message: "Failed to record impression"
+        });
+    }
+};
+
+exports.recordBatchImpressions = async (req, res) => {
+    try {
+        const { ad_ids, user_id } = req.body;
+        if (!Array.isArray(ad_ids) || ad_ids.length === 0) {
+            return res.status(400).json({ status: "error", message: "ad_ids array required" });
+        }
+        const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress || null;
+
+        const values = ad_ids.map(id => [id, 'impression', user_id || null, ip]);
+        await pool.query(
+            `INSERT INTO ad_events (ad_id, event_type, user_id, ip_address) VALUES ?`,
+            [values]
+        );
+
+        return res.status(200).json({
+            status: "success",
+            message: `${ad_ids.length} impressions recorded`
+        });
+    } catch (err) {
+        console.error("Batch Impressions Error:", err);
+        return res.status(500).json({
+            status: "error",
+            message: "Failed to record impressions"
+        });
+    }
+};
+
+exports.recordAdClick = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const { user_id } = req.body;
+        const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress || null;
+
+        await pool.query(
+            `INSERT INTO ad_events (ad_id, event_type, user_id, ip_address) VALUES (?, 'click', ?, ?)`,
+            [id, user_id || null, ip]
+        );
+
+        return res.status(200).json({
+            status: "success",
+            message: "Click recorded"
+        });
+    } catch (err) {
+        console.error("Record Click Error:", err);
+        return res.status(500).json({
+            status: "error",
+            message: "Failed to record click"
+        });
+    }
+};
+
+exports.getAdReport = async (req, res) => {
+    try {
+        const { id } = req.params;
+        
+        // Fetch ad details
+        const [ads] = await pool.query(
+            `SELECT a.*, v.name as vendor_name 
+             FROM ads a
+             LEFT JOIN vendors v ON a.vendor_id = v.id
+             WHERE a.id = ?`,
+            [id]
+        );
+
+        if (!ads.length) {
+            return res.status(404).json({
+                status: "error",
+                message: "Ad not found"
+            });
+        }
+
+        const ad = ads[0];
+
+        // Overall stats
+        const [overallStats] = await pool.query(
+            `SELECT 
+                COUNT(CASE WHEN event_type = 'impression' THEN 1 END) as total_impressions,
+                COUNT(DISTINCT CASE WHEN event_type = 'impression' THEN COALESCE(user_id, ip_address, id) END) as unique_viewers,
+                COUNT(CASE WHEN event_type = 'click' THEN 1 END) as total_clicks,
+                COUNT(DISTINCT CASE WHEN event_type = 'click' THEN COALESCE(user_id, ip_address, id) END) as unique_clickers
+             FROM ad_events
+             WHERE ad_id = ?`,
+            [id]
+        );
+
+        const totalImpressions = Number(overallStats[0].total_impressions || 0);
+        const uniqueViewers = Math.max(Number(overallStats[0].unique_viewers || 0), totalImpressions > 0 ? 1 : 0);
+        const totalClicks = Number(overallStats[0].total_clicks || 0);
+        const uniqueClickers = Math.max(Number(overallStats[0].unique_clickers || 0), totalClicks > 0 ? 1 : 0);
+        const ctr = totalImpressions > 0 ? parseFloat(((totalClicks / totalImpressions) * 100).toFixed(2)) : 0;
+
+        // Daily trends (last 30 days)
+        const [dailyRows] = await pool.query(
+            `SELECT 
+                DATE(created_at) as event_date,
+                COUNT(CASE WHEN event_type = 'impression' THEN 1 END) as impressions,
+                COUNT(CASE WHEN event_type = 'click' THEN 1 END) as clicks
+             FROM ad_events
+             WHERE ad_id = ? AND created_at >= DATE_SUB(NOW(), INTERVAL 30 DAY)
+             GROUP BY DATE(created_at)
+             ORDER BY event_date DESC`,
+            [id]
+        );
+
+        const dailyTrends = dailyRows.map(row => {
+            const imps = Number(row.impressions || 0);
+            const clks = Number(row.clicks || 0);
+            return {
+                date: row.event_date ? new Date(row.event_date).toISOString().split('T')[0] : '',
+                impressions: imps,
+                clicks: clks,
+                ctr: imps > 0 ? parseFloat(((clks / imps) * 100).toFixed(2)) : 0
+            };
+        });
+
+        const report = {
+            ad: {
+                id: ad.id,
+                title: ad.title,
+                description: ad.description,
+                image_url: ad.image_url,
+                ad_type: ad.ad_type,
+                campaign_type: ad.campaign_type,
+                vendor_id: ad.vendor_id,
+                vendor_name: ad.vendor_name || 'N/A',
+                link_url: ad.link_url,
+                start_date: ad.start_date,
+                end_date: ad.end_date,
+                is_active: ad.is_active,
+                approval_status: ad.approval_status,
+                created_at: ad.created_at
+            },
+            metrics: {
+                total_impressions: totalImpressions,
+                unique_viewers: uniqueViewers,
+                total_clicks: totalClicks,
+                unique_clickers: uniqueClickers,
+                ctr: ctr
+            },
+            daily_trends: dailyTrends,
+            generated_at: new Date().toISOString()
+        };
+
+        return res.status(200).json({
+            status: "success",
+            data: report
+        });
+    } catch (err) {
+        console.error("Get Ad Report Error:", err);
+        return res.status(500).json({
+            status: "error",
+            message: "Failed to generate ad report"
+        });
+    }
+};
+
+exports.getAdsAnalyticsSummary = async (req, res) => {
+    try {
+        const { vendor_id, ad_type, campaign_type } = req.query;
+
+        let query = `
+            SELECT 
+                a.id, a.title, a.description, a.ad_type, a.campaign_type, a.vendor_id, 
+                v.name as vendor_name, a.image_url, a.is_active, a.approval_status, 
+                a.price, a.discount, a.discount_type, a.target_type, a.category_ids, a.coupon_ids,
+                c.category_name as category_name, cp.title as coupon_title,
+                a.start_date, a.end_date, a.created_at,
+                COUNT(CASE WHEN ae.event_type = 'impression' THEN 1 END) as total_impressions,
+                COUNT(DISTINCT CASE WHEN ae.event_type = 'impression' THEN COALESCE(ae.user_id, ae.ip_address, ae.id) END) as unique_viewers,
+                COUNT(CASE WHEN ae.event_type = 'click' THEN 1 END) as total_clicks,
+                COUNT(DISTINCT CASE WHEN ae.event_type = 'click' THEN COALESCE(ae.user_id, ae.ip_address, ae.id) END) as unique_clickers,
+                (SELECT COUNT(*) FROM ad_conversions ac WHERE ac.ad_id = a.id) as total_orders,
+                (SELECT SUM(quantity) FROM ad_conversions ac WHERE ac.ad_id = a.id) as total_coupons_sold,
+                (SELECT SUM(amount) FROM ad_conversions ac WHERE ac.ad_id = a.id) as total_revenue
+            FROM ads a
+            LEFT JOIN vendors v ON a.vendor_id = v.id
+            LEFT JOIN categories c ON a.category_id = c.id
+            LEFT JOIN coupons cp ON a.coupon_id = cp.id
+            LEFT JOIN ad_events ae ON a.id = ae.ad_id
+            WHERE 1=1
+        `;
+        const params = [];
+
+        if (vendor_id) {
+            query += ` AND a.vendor_id = ?`;
+            params.push(vendor_id);
+        }
+
+        if (ad_type) {
+            query += ` AND a.ad_type = ?`;
+            params.push(ad_type);
+        }
+
+        if (campaign_type) {
+            query += ` AND a.campaign_type = ?`;
+            params.push(campaign_type);
+        }
+
+        query += ` GROUP BY a.id ORDER BY a.created_at DESC`;
+
+        const [rows] = await pool.query(query, params);
+
+        let sumImpressions = 0;
+        let sumClicks = 0;
+        let sumUniqueViewers = 0;
+        let sumUniqueClickers = 0;
+
+        const tableData = rows.map(r => {
+            const imps = Number(r.total_impressions || 0);
+            const clks = Number(r.total_clicks || 0);
+            const uViewers = Math.max(Number(r.unique_viewers || 0), imps > 0 ? 1 : 0);
+            const uClickers = Math.max(Number(r.unique_clickers || 0), clks > 0 ? 1 : 0);
+            const ctr = imps > 0 ? parseFloat(((clks / imps) * 100).toFixed(2)) : 0;
+
+            sumImpressions += imps;
+            sumClicks += clks;
+            sumUniqueViewers += uViewers;
+            sumUniqueClickers += uClickers;
+
+            return {
+                id: r.id,
+                title: r.title,
+                description: r.description,
+                image_url: r.image_url,
+                ad_type: r.ad_type,
+                campaign_type: r.campaign_type,
+                vendor_id: r.vendor_id,
+                vendor_name: r.vendor_name || (r.ad_type === 'marketplace' ? 'Marketplace Ad' : 'N/A'),
+                category_name: r.category_name,
+                coupon_title: r.coupon_title,
+                target_type: r.target_type || 'all',
+                price: r.price,
+                discount: r.discount,
+                discount_type: r.discount_type,
+                is_active: r.is_active,
+                approval_status: r.approval_status,
+                start_date: r.start_date,
+                end_date: r.end_date,
+                created_at: r.created_at,
+                total_impressions: imps,
+                unique_viewers: uViewers,
+                total_clicks: clks,
+                unique_clickers: uClickers,
+                ctr: ctr,
+                total_orders: Number(r.total_orders || 0),
+                total_coupons_sold: Number(r.total_coupons_sold || 0),
+                total_revenue: Number(r.total_revenue || 0)
+            };
+        });
+
+        const overallCtr = sumImpressions > 0 ? parseFloat(((sumClicks / sumImpressions) * 100).toFixed(2)) : 0;
+
+        return res.status(200).json({
+            status: "success",
+            data: {
+                summary: {
+                    total_ads: tableData.length,
+                    total_impressions: sumImpressions,
+                    total_clicks: sumClicks,
+                    unique_viewers: sumUniqueViewers,
+                    unique_clickers: sumUniqueClickers,
+                    average_ctr: overallCtr,
+                    active_ads: tableData.filter(a => a.is_active === 1 && a.approval_status === 'approved').length
+                },
+                ads: tableData,
+                generated_at: new Date().toISOString()
+            }
+        });
+    } catch (err) {
+        console.error("Get Ads Analytics Summary Error:", err);
+        return res.status(500).json({
+            status: "error",
+            message: "Failed to generate analytics summary"
+        });
+    }
+};
+
 // ==================== ROUTES ====================
 
 // Base route for vendor creation / listing vendors
@@ -1326,7 +1680,15 @@ router.put("/vendor/listings/:id/approve", exports.approveListing);
 router.put("/vendor/listings/:id/disapprove", exports.disapproveListing);
 router.delete("/vendor/listings/:id", exports.deleteListing);
 
-// Ads routes
+// Ads tracking & report routes
+router.get("/ads/reports/summary", exports.getAdsAnalyticsSummary);
+router.get("/vendor/ads/reports/summary", exports.getAdsAnalyticsSummary);
+router.post("/ads/impressions", exports.recordBatchImpressions);
+router.post("/ads/:id/impression", exports.recordAdImpression);
+router.post("/ads/:id/click", exports.recordAdClick);
+router.get("/ads/:id/report", exports.getAdReport);
+
+// Ads CRUD & management routes
 router.get("/ads", exports.getAds);
 router.get("/ads/:id", exports.getAdById);
 router.post("/ads", upload.single('image'), exports.createAd);
@@ -1338,6 +1700,11 @@ router.put("/ads/:id/disapprove", exports.disapproveAd);
 router.patch("/ads/:id/toggle", exports.toggleAdStatus);
 
 // Alias routes for /vendor/ads
+router.post("/vendor/ads/impressions", exports.recordBatchImpressions);
+router.post("/vendor/ads/:id/impression", exports.recordAdImpression);
+router.post("/vendor/ads/:id/click", exports.recordAdClick);
+router.get("/vendor/ads/:id/report", exports.getAdReport);
+
 router.get("/vendor/ads", exports.getAds);
 router.get("/vendor/ads/:id", exports.getAdById);
 router.post("/vendor/ads", upload.single('image'), exports.createAd);

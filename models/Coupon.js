@@ -103,6 +103,7 @@ class Coupon {
         return `
             SELECT
                 c.id,
+                c.coupon_code,
                 c.title,
                 c.subtitle,
                 c.description,

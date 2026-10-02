@@ -77,9 +77,22 @@ router.post('/create-payment-intent', async (req, res, next) => {
       `SELECT
         c.coupon_id,
         c.quantity,
+        c.ad_id,
         p.title,
         p.banner_image_url AS thumbnail_url,
-        p.price,
+        IF(
+          c.ad_id IS NOT NULL AND a.id IS NOT NULL AND a.is_active = 1 AND a.approval_status = 'approved',
+          IF(
+            a.discount_type = 'percentage',
+            p.price - (p.price * a.discount / 100),
+            IF(
+              a.discount_type = 'lumpsum',
+              GREATEST(0, p.price - a.discount),
+              p.price
+            )
+          ),
+          p.price
+        ) AS price,
         p.max_quantity,
         p.coupon_code,
         p.is_active,
@@ -87,6 +100,7 @@ router.post('/create-payment-intent', async (req, res, next) => {
         (p.valid_from <= NOW() AND p.valid_until >= NOW()) AS valid_now
        FROM coupon_cart c
        LEFT JOIN coupons p ON p.id = c.coupon_id
+       LEFT JOIN ads a ON a.id = c.ad_id
        WHERE c.user_id = ?
        ORDER BY c.coupon_id`,
       [req.user.id]
@@ -322,9 +336,22 @@ router.post('/confirm-order', async (req, res, next) => {
       `SELECT
         c.coupon_id,
         c.quantity,
+        c.ad_id,
         p.title,
         p.banner_image_url AS thumbnail_url,
-        p.price,
+        IF(
+          c.ad_id IS NOT NULL AND a.id IS NOT NULL AND a.is_active = 1 AND a.approval_status = 'approved',
+          IF(
+            a.discount_type = 'percentage',
+            p.price - (p.price * a.discount / 100),
+            IF(
+              a.discount_type = 'lumpsum',
+              GREATEST(0, p.price - a.discount),
+              p.price
+            )
+          ),
+          p.price
+        ) AS price,
         p.max_quantity,
         p.coupon_code,
         p.is_active,
@@ -332,6 +359,7 @@ router.post('/confirm-order', async (req, res, next) => {
         (p.valid_from <= NOW() AND p.valid_until >= NOW()) AS valid_now
        FROM coupon_cart c
        LEFT JOIN coupons p ON p.id = c.coupon_id
+       LEFT JOIN ads a ON a.id = c.ad_id
        WHERE c.user_id = ?
        ORDER BY c.coupon_id
        FOR UPDATE`,
@@ -358,6 +386,7 @@ router.post('/confirm-order', async (req, res, next) => {
         price: item.price,
         subtotal: item.subtotal,
         redemption_codes: [actualCode],
+        ad_id: item.ad_id || null,
       };
     });
 
@@ -388,6 +417,17 @@ router.post('/confirm-order', async (req, res, next) => {
         requestId,
       ]
     );
+
+    const orderId = insert.insertId;
+
+    for (const item of items) {
+      if (item.ad_id) {
+        await db.query(
+          `INSERT INTO ad_conversions (order_id, ad_id, coupon_id, quantity, amount) VALUES (?, ?, ?, ?, ?)`,
+          [orderId, item.ad_id, item.coupon_id, item.quantity, item.subtotal]
+        );
+      }
+    }
 
     await db.query('DELETE FROM coupon_cart WHERE user_id = ?', [req.user.id]);
     await db.commit();

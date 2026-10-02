@@ -107,6 +107,8 @@ const save = add => handle(async (req, res) => {
     add ? req.body?.coupon_id : req.params.coupon_id
   );
 
+  const ad_id = add && req.body?.ad_id ? Number(req.body.ad_id) : null;
+
   const quantity = Number(
     req.body?.quantity ?? (add ? 1 : NaN)
   );
@@ -194,10 +196,10 @@ const save = add => handle(async (req, res) => {
     }
 
     await db.query(
-      `INSERT INTO coupon_cart (user_id, coupon_id, quantity)
-       VALUES (?, ?, ?)
-       ON DUPLICATE KEY UPDATE quantity = ?`,
-      [req.user.id, id, next, next]
+      `INSERT INTO coupon_cart (user_id, coupon_id, quantity, ad_id)
+       VALUES (?, ?, ?, ?)
+       ON DUPLICATE KEY UPDATE quantity = ?, ad_id = COALESCE(?, ad_id)`,
+      [req.user.id, id, next, ad_id, next, ad_id]
     );
 
     await db.commit();
@@ -229,15 +231,30 @@ router.get('/', handle(async (req, res) => {
       c.id AS cart_id,
       c.coupon_id,
       c.quantity,
+      c.ad_id,
       p.title,
       p.description,
       p.banner_image_url AS thumbnail_url,
       p.city,
       p.coupon_code,
       p.max_quantity,
-      p.price
+      IF(
+        c.ad_id IS NOT NULL AND a.id IS NOT NULL AND a.is_active = 1 AND a.approval_status = 'approved',
+        IF(
+          a.discount_type = 'percentage',
+          p.price - (p.price * a.discount / 100),
+          IF(
+            a.discount_type = 'lumpsum',
+            GREATEST(0, p.price - a.discount),
+            p.price
+          )
+        ),
+        p.price
+      ) AS price,
+      IF(c.ad_id IS NOT NULL AND a.id IS NOT NULL AND a.is_active = 1 AND a.approval_status = 'approved', p.price, NULL) AS original_price
      FROM coupon_cart c
      LEFT JOIN coupons p ON p.id = c.coupon_id
+     LEFT JOIN ads a ON a.id = c.ad_id
      WHERE c.user_id = ?
      ORDER BY c.created_at DESC`,
     [req.user.id]

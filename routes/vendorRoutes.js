@@ -260,7 +260,7 @@ router.get("/profile", async (req, res) => {
             });
         }
 
-        const vendorId = decoded.vendor_id;
+        const vendorId = decoded.vendor_id || decoded.id;
         if (!vendorId) {
             return res.status(401).json({
                 success: false,
@@ -321,10 +321,18 @@ router.get("/orders", async (req, res) => {
             return res.status(401).json({ success: false, message: "Unauthorized - Vendor ID not found" });
         }
 
+        // Find all coupons belonging to this vendor
+        const [vendorCoupons] = await pool.query(
+            "SELECT id FROM coupons WHERE vendor_id = ?",
+            [vendorId]
+        );
+        const vendorCouponIds = new Set(vendorCoupons.map(c => Number(c.id)));
+
         // Find all orders where items contain a coupon belonging to this vendor
         const query = `
-            SELECT DISTINCT o.* 
-            FROM coupon_orders o, 
+            SELECT DISTINCT o.*, u.name as customer_name, u.email as customer_email, u.phone as customer_phone
+            FROM coupon_orders o
+            LEFT JOIN users u ON o.user_id = u.id,
             JSON_TABLE(o.items, '$[*]' COLUMNS(coupon_id INT PATH '$.coupon_id')) AS jt
             JOIN coupons c ON c.id = jt.coupon_id
             WHERE c.vendor_id = ?
@@ -332,12 +340,27 @@ router.get("/orders", async (req, res) => {
         `;
         const [orders] = await pool.query(query, [vendorId]);
 
-        // Parse items and payment details back from string if needed
-        const parsedOrders = orders.map(order => ({
-            ...order,
-            items: typeof order.items === 'string' ? JSON.parse(order.items) : order.items,
-            payment_details: typeof order.payment_details === 'string' ? JSON.parse(order.payment_details) : (order.payment_details || null)
-        }));
+        // Filter items in each order to ONLY include coupons belonging to this vendor
+        const parsedOrders = orders
+            .map(order => {
+                const rawItems = typeof order.items === 'string' ? JSON.parse(order.items) : (order.items || []);
+                const vendorItems = rawItems.filter(item => vendorCouponIds.has(Number(item.coupon_id)));
+                
+                const vendorTotalItems = vendorItems.reduce((sum, item) => sum + (Number(item.quantity) || 1), 0);
+                const vendorTotalAmount = vendorItems.reduce((sum, item) => {
+                    const itemSubtotal = item.subtotal !== undefined ? Number(item.subtotal) : (Number(item.price) || 0) * (Number(item.quantity) || 1);
+                    return sum + itemSubtotal;
+                }, 0);
+
+                return {
+                    ...order,
+                    items: vendorItems,
+                    total_items: vendorTotalItems,
+                    total_amount: vendorTotalAmount,
+                    payment_details: typeof order.payment_details === 'string' ? JSON.parse(order.payment_details) : (order.payment_details || null)
+                };
+            })
+            .filter(order => order.items.length > 0);
 
         res.status(200).json({ success: true, orders: parsedOrders });
     } catch (error) {

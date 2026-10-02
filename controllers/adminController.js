@@ -235,10 +235,16 @@ exports.adjustVendorRewards = async (req, res) => {
 
 exports.getOrders = async (req, res) => {
     try {
+        const { vendor_id } = req.query;
         const query = `
             SELECT o.*, 
                    u.name AS customer_name, 
                    u.email AS customer_email,
+                   (SELECT v.id 
+                    FROM coupons c 
+                    JOIN vendors v ON c.vendor_id = v.id 
+                    WHERE c.id = JSON_UNQUOTE(JSON_EXTRACT(o.items, '$[0].coupon_id')) 
+                    LIMIT 1) as vendor_id,
                    (SELECT v.name 
                     FROM coupons c 
                     JOIN vendors v ON c.vendor_id = v.id 
@@ -250,11 +256,15 @@ exports.getOrders = async (req, res) => {
         `;
         const [orders] = await pool.query(query);
         
-        const serializedOrders = orders.map(order => ({
+        let serializedOrders = orders.map(order => ({
             ...order,
             items: typeof order.items === 'string' ? JSON.parse(order.items) : order.items,
             payment_details: typeof order.payment_details === 'string' ? JSON.parse(order.payment_details) : (order.payment_details || null)
         }));
+
+        if (vendor_id && vendor_id !== 'all') {
+            serializedOrders = serializedOrders.filter(ord => String(ord.vendor_id) === String(vendor_id));
+        }
 
         return res.status(200).json({
             status: 'success',
