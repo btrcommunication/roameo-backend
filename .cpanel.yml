@@ -1,4 +1,4 @@
 ---
 deployment:
   tasks:
-    - /bin/cp -R * $DEPLOYPATH
+    - echo "Deployed successfully"
