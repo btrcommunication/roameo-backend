@@ -18,7 +18,8 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # The remote directory on your cPanel server (e.g. /public_html/api)
+          protocol: ftp
+          port: 21
           # server-dir: /public_html/
           exclude: |
             **/.git*
