@@ -3,3 +3,6 @@ node_modules/
 .DS_Store
 uploads/
 firebase-admin.json
+.ftpquota
+git.zip
+alter_ads.js

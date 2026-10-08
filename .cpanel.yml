@@ -1,4 +1,5 @@
 ---
 deployment:
   tasks:
-    - echo "Deployed successfully"
+    - export DEPLOYPATH=/home/guruuzld/roameomobileapp.braventra.in/
+    - /bin/cp -R * $DEPLOYPATH
