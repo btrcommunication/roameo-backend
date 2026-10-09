@@ -7,6 +7,13 @@ const pool = require("../config/db");
 // ─────────────────────────────────────────────
 exports.getUserProfile = async (req, res) => {
     try {
+        if (!req.user || !req.user.id) {
+            return res.status(401).json({
+                status: "error",
+                message: "Unauthorized. Please log in."
+            });
+        }
+        
         const user = await User.findById(req.user.id);
 
         if (!user || !user.is_active) {
