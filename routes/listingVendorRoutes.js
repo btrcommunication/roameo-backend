@@ -6,6 +6,7 @@ const path = require("path");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { sendVendorAcceptedEmail, sendVendorRejectedEmail } = require("../services/emailService");
+const { sendMulticastPushNotification } = require("../services/pushNotificationService");
 
 // Configure multer for memory storage
 const storage = multer.memoryStorage();
@@ -1305,6 +1306,24 @@ exports.approveAd = async (req, res) => {
                 `INSERT INTO customer_notifications (title, message, image_url) VALUES (?, ?, ?)`,
                 [ad.title, ad.description || 'Check out our new ad!', ad.image_url]
             );
+
+            // Send FCM push notification to all customers with a saved device token
+            try {
+                const [rows] = await pool.query(
+                    `SELECT expo_push_token FROM users WHERE expo_push_token IS NOT NULL AND expo_push_token != ''`
+                );
+                const tokens = rows.map(r => r.expo_push_token);
+                for (let i = 0; i < tokens.length; i += 500) {
+                    await sendMulticastPushNotification(
+                        tokens.slice(i, i + 500),
+                        ad.title,
+                        ad.description || 'Check out our new ad!',
+                        { type: 'notification_ad', adId: String(id) }
+                    );
+                }
+            } catch (pushErr) {
+                console.error('FCM push error (ad approve):', pushErr);
+            }
         }
 
         return res.status(200).json({ status: 'success', message: 'Ad approved' });
