@@ -1,11 +1,35 @@
-const admin = require('firebase-admin');
-const serviceAccount = require('../firebase-admin.json');
+let initializeApp, cert, getApps, getMessaging;
 
-// Initialize Firebase Admin App
-if (!admin.apps.length) {
-    admin.initializeApp({
-        credential: admin.credential.cert(serviceAccount)
-    });
+try {
+    const appModule = require('firebase-admin/app');
+    const msgModule = require('firebase-admin/messaging');
+    initializeApp = appModule.initializeApp;
+    cert = appModule.cert;
+    getApps = appModule.getApps;
+    getMessaging = msgModule.getMessaging;
+} catch (_) {
+    // Compat fallback if sub-modules not available
+    const adminRoot = require('firebase-admin');
+    const root = adminRoot.default || adminRoot;
+    initializeApp = root.initializeApp ? root.initializeApp.bind(root) : null;
+    cert = (root.credential && root.credential.cert) ? root.credential.cert.bind(root.credential) : null;
+    getApps = () => (root.apps || []);
+    getMessaging = () => (root.messaging ? root.messaging() : null);
+}
+
+let isFirebaseInitialized = false;
+
+try {
+    const serviceAccount = require('../firebase-admin.json');
+    if (getApps && !getApps().length && initializeApp && cert) {
+        initializeApp({
+            credential: cert(serviceAccount)
+        });
+    }
+    isFirebaseInitialized = true;
+    console.log('[Push Notification] Firebase Admin successfully initialized.');
+} catch (initErr) {
+    console.error('[Push Notification Error] Failed to initialize Firebase Admin:', initErr.message);
 }
 
 /**
@@ -16,6 +40,11 @@ if (!admin.apps.length) {
  * @param {object} data - Optional data payload (e.g. adId)
  */
 const sendPushNotification = async (token, title, body, data = {}) => {
+    if (!isFirebaseInitialized) {
+        console.warn('[Push Notification] Firebase Admin is not initialized. Skipping single push.');
+        return null;
+    }
+
     try {
         console.log(`[Push Notification] Sending single push to token: ${token.substring(0, 15)}...`);
         const message = {
@@ -36,7 +65,8 @@ const sendPushNotification = async (token, title, body, data = {}) => {
             token: token
         };
 
-        const response = await admin.messaging().send(message);
+        const messaging = getMessaging();
+        const response = await messaging.send(message);
         console.log('[Push Notification] Successfully sent message:', response);
         return response;
     } catch (error) {
@@ -50,6 +80,11 @@ const sendPushNotification = async (token, title, body, data = {}) => {
  * Useful for broad marketing campaigns.
  */
 const sendMulticastPushNotification = async (tokens, title, body, data = {}) => {
+    if (!isFirebaseInitialized) {
+        console.warn('[Push Notification] Firebase Admin is not initialized. Skipping multicast push.');
+        return { successCount: 0, failureCount: 0, responses: [] };
+    }
+
     if (!tokens || tokens.length === 0) {
         console.log('[Push Notification] No device tokens to send to. Skipping push notification.');
         return { successCount: 0, failureCount: 0, responses: [] };
@@ -76,7 +111,8 @@ const sendMulticastPushNotification = async (tokens, title, body, data = {}) => 
             tokens: tokens
         };
 
-        const response = await admin.messaging().sendEachForMulticast(message);
+        const messaging = getMessaging();
+        const response = await messaging.sendEachForMulticast(message);
         console.log(`[Push Notification] Multicast result: ${response.successCount} succeeded, ${response.failureCount} failed out of ${tokens.length} total.`);
         
         if (response.failureCount > 0) {
@@ -95,6 +131,5 @@ const sendMulticastPushNotification = async (tokens, title, body, data = {}) => 
 
 module.exports = {
     sendPushNotification,
-    sendMulticastPushNotification,
-    admin
+    sendMulticastPushNotification
 };

@@ -111,4 +111,12 @@ app.listen(PORT, () => {
     console.log(
         `API Documentation: http://localhost:${PORT}/api-docs`
     );
+    
+    // Initialize daily notification ad scheduler
+    try {
+        const { initDailyScheduler } = require("./services/adSchedulerService");
+        initDailyScheduler();
+    } catch (schedErr) {
+        console.error('Failed to start ad scheduler:', schedErr.message);
+    }
 });

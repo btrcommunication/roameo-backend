@@ -1344,7 +1344,17 @@ exports.approveAd = async (req, res) => {
                             { 
                                 type: 'notification_ad', 
                                 adId: String(id),
-                                imageUrl: ad.image_url || ''
+                                imageUrl: ad.image_url || '',
+                                title: ad.title || '',
+                                description: ad.description || '',
+                                vendor_id: ad.vendor_id ? String(ad.vendor_id) : '',
+                                vendor_name: ad.vendor_name || '',
+                                coupon_ids: ad.coupon_ids ? (typeof ad.coupon_ids === 'object' ? JSON.stringify(ad.coupon_ids) : String(ad.coupon_ids)) : '',
+                                coupon_id: ad.coupon_id ? String(ad.coupon_id) : '',
+                                category_ids: ad.category_ids ? (typeof ad.category_ids === 'object' ? JSON.stringify(ad.category_ids) : String(ad.category_ids)) : '',
+                                category_id: ad.category_id ? String(ad.category_id) : '',
+                                coupon_code: ad.coupon_code || '',
+                                target_type: ad.target_type || ''
                             }
                         );
                         if (result) {
