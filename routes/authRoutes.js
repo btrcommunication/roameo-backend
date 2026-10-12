@@ -90,6 +90,22 @@ router.post("/signup", authController.signup);
 router.post("/login", authController.login);
 
 
-const authMiddleware = require('../middleware/auth');
-router.post('/save-push-token', authMiddleware, authController.savePushToken);
+const optionalAuth = (req, res, next) => {
+    try {
+        const authHeader = req.headers.authorization;
+        if (typeof authHeader === "string" && authHeader.startsWith("Bearer ")) {
+            const token = authHeader.slice(7).trim();
+            if (token && token !== 'demo-token') {
+                const { verifyToken } = require("../config/jwt");
+                const decoded = verifyToken(token);
+                if (decoded && decoded.id) {
+                    req.user = decoded;
+                }
+            }
+        }
+    } catch (_) {}
+    next();
+};
+
+router.post('/save-push-token', optionalAuth, authController.savePushToken);
 module.exports = router;

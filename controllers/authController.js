@@ -2,6 +2,18 @@ const bcrypt = require("bcrypt");
 const User = require("../models/User");
 const { generateToken } = require("../config/jwt");
 const { sendWelcomeEmail } = require("../services/emailService");
+const pool = require("../config/db");
+
+// Auto-create device_tokens table for all devices (guests and authenticated users)
+pool.query(`
+    CREATE TABLE IF NOT EXISTS device_tokens (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        token VARCHAR(255) NOT NULL UNIQUE,
+        user_id INT NULL,
+        platform VARCHAR(50) DEFAULT 'android',
+        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    )
+`).catch(err => console.error('[Push Notification Error] Failed to ensure device_tokens table:', err.message));
 
 // ─────────────────────────────────────────────
 // POST /api/auth/signup
@@ -158,15 +170,39 @@ exports.login = async (req, res) => {
 
 exports.savePushToken = async (req, res) => {
     try {
-        const { token } = req.body;
-        const userId = req.user.id;
+        const { token, platform } = req.body;
+        const userId = req.user ? req.user.id : null;
         if (!token) {
+            console.warn('[Push Notification] savePushToken called without token');
             return res.status(400).json({ status: 'error', message: 'Token is required' });
         }
-        await User.updatePushToken(userId, token);
-        res.json({ status: 'success', message: 'Push token saved successfully' });
+
+        console.log(`[Push Notification] Saving token (${token.substring(0, 15)}...) for user: ${userId || 'guest device'}`);
+
+        // 1. Save in device_tokens table
+        try {
+            await pool.query(
+                `INSERT INTO device_tokens (token, user_id, platform) 
+                 VALUES (?, ?, ?) 
+                 ON DUPLICATE KEY UPDATE 
+                    user_id = COALESCE(VALUES(user_id), user_id),
+                    platform = VALUES(platform),
+                    updated_at = NOW()`,
+                [token, userId, platform || 'android']
+            );
+        } catch (dbErr) {
+            console.error('[Push Notification Error] Failed to insert into device_tokens:', dbErr.message);
+        }
+
+        // 2. Also update users table if userId is present
+        if (userId) {
+            await User.updatePushToken(userId, token);
+        }
+
+        console.log(`[Push Notification] Successfully registered push token for ${userId ? `user ID ${userId}` : 'guest device'}`);
+        return res.json({ status: 'success', message: 'Push token saved successfully' });
     } catch (err) {
-        console.error('Save Push Token Error:', err);
-        res.status(500).json({ status: 'error', message: 'Failed to save push token' });
+        console.error('[Push Notification Error] Save Push Token Error:', err);
+        return res.status(500).json({ status: 'error', message: 'Failed to save push token' });
     }
 };

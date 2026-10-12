@@ -1300,8 +1300,13 @@ exports.approveAd = async (req, res) => {
             [start_date, end_date, id]
         );
 
-        // If it's a notification ad, broadcast it to all customers (user_id = NULL)
-        if (ad.campaign_type === 'notification') {
+        // If it's a notification ad, broadcast it to all customers
+        const isNotificationAd = ad.campaign_type?.toLowerCase() === 'notification' || ad.ad_type?.toLowerCase() === 'notification';
+        let pushStats = null;
+
+        if (isNotificationAd) {
+            console.log(`[Ad Approval] Approved ad #${id} is a Notification campaign ("${ad.title}"). Broadcasting to customers...`);
+            
             await pool.query(
                 `INSERT INTO customer_notifications (title, message, image_url) VALUES (?, ?, ?)`,
                 [ad.title, ad.description || 'Check out our new ad!', ad.image_url]
@@ -1309,24 +1314,58 @@ exports.approveAd = async (req, res) => {
 
             // Send FCM push notification to all customers with a saved device token
             try {
-                const [rows] = await pool.query(
-                    `SELECT expo_push_token FROM users WHERE expo_push_token IS NOT NULL AND expo_push_token != ''`
+                // Fetch tokens from both device_tokens and users tables
+                const [deviceRows] = await pool.query(
+                    `SELECT token FROM device_tokens WHERE token IS NOT NULL AND token != ''`
+                ).catch(() => [[]]);
+                const [userRows] = await pool.query(
+                    `SELECT expo_push_token AS token FROM users WHERE expo_push_token IS NOT NULL AND expo_push_token != ''`
                 );
-                const tokens = rows.map(r => r.expo_push_token);
-                for (let i = 0; i < tokens.length; i += 500) {
-                    await sendMulticastPushNotification(
-                        tokens.slice(i, i + 500),
-                        ad.title,
-                        ad.description || 'Check out our new ad!',
-                        { type: 'notification_ad', adId: String(id) }
-                    );
+
+                const uniqueTokens = Array.from(new Set([
+                    ...deviceRows.map(r => r.token),
+                    ...userRows.map(r => r.token)
+                ])).filter(t => t && typeof t === 'string' && t.trim().length > 0);
+
+                console.log(`[Ad Approval] Found ${uniqueTokens.length} recipient device token(s) across all registered devices & users.`);
+
+                if (uniqueTokens.length === 0) {
+                    console.warn(`[Ad Approval Warning] No registered device tokens found in database. 0 notifications sent.`);
+                    pushStats = { broadcast: false, reason: 'No registered device tokens found in database' };
+                } else {
+                    let totalSuccess = 0;
+                    let totalFailure = 0;
+                    for (let i = 0; i < uniqueTokens.length; i += 500) {
+                        const batch = uniqueTokens.slice(i, i + 500);
+                        const result = await sendMulticastPushNotification(
+                            batch,
+                            ad.title,
+                            ad.description || 'Check out our new ad!',
+                            { 
+                                type: 'notification_ad', 
+                                adId: String(id),
+                                imageUrl: ad.image_url || ''
+                            }
+                        );
+                        if (result) {
+                            totalSuccess += (result.successCount || 0);
+                            totalFailure += (result.failureCount || 0);
+                        }
+                    }
+                    console.log(`[Ad Approval] Finished FCM broadcast for ad #${id}: ${totalSuccess} succeeded, ${totalFailure} failed out of ${uniqueTokens.length} device(s).`);
+                    pushStats = { broadcast: true, totalTokens: uniqueTokens.length, successCount: totalSuccess, failureCount: totalFailure };
                 }
             } catch (pushErr) {
-                console.error('FCM push error (ad approve):', pushErr);
+                console.error('[Ad Approval Error] FCM push broadcast error:', pushErr);
+                pushStats = { broadcast: false, error: pushErr.message };
             }
         }
 
-        return res.status(200).json({ status: 'success', message: 'Ad approved' });
+        return res.status(200).json({ 
+            status: 'success', 
+            message: 'Ad approved',
+            push_notification: pushStats
+        });
     } catch (err) {
         console.error('Approve Ad Error:', err);
         return res.status(500).json({ status: 'error', message: 'Failed to approve ad' });
