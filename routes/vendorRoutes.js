@@ -3,6 +3,25 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const pool = require("../config/db");
 
+const verifyVendorToken = (token) => {
+    const candidateSecrets = [
+        process.env.JWT_SECRET,
+        'roameo_secret_key_2024',
+        'roameosecret1234',
+        'your-secret-key'
+    ].filter(Boolean);
+
+    let lastError = null;
+    for (const secret of candidateSecrets) {
+        try {
+            return jwt.verify(token, secret);
+        } catch (e) {
+            lastError = e;
+        }
+    }
+    throw lastError || new Error('Invalid or expired token');
+};
+
 /**
  * @swagger
  * tags:
@@ -252,7 +271,7 @@ router.get("/profile", async (req, res) => {
         
         let decoded;
         try {
-            decoded = jwt.verify(token, process.env.JWT_SECRET || 'roameo_secret_key_2024');
+            decoded = verifyVendorToken(token);
         } catch (error) {
             return res.status(401).json({
                 success: false,
@@ -311,7 +330,7 @@ router.get("/orders", async (req, res) => {
         const token = authHeader.split(' ')[1];
         let decoded;
         try {
-            decoded = jwt.verify(token, process.env.JWT_SECRET || 'roameo_secret_key_2024');
+            decoded = verifyVendorToken(token);
         } catch (error) {
             return res.status(401).json({ success: false, message: "Invalid or expired token" });
         }
@@ -329,16 +348,33 @@ router.get("/orders", async (req, res) => {
         const vendorCouponIds = new Set(vendorCoupons.map(c => Number(c.id)));
 
         // Find all orders where items contain a coupon belonging to this vendor
-        const query = `
-            SELECT DISTINCT o.*, u.name as customer_name, u.email as customer_email, u.phone as customer_phone
-            FROM coupon_orders o
-            LEFT JOIN users u ON o.user_id = u.id,
-            JSON_TABLE(o.items, '$[*]' COLUMNS(coupon_id INT PATH '$.coupon_id')) AS jt
-            JOIN coupons c ON c.id = jt.coupon_id
-            WHERE c.vendor_id = ?
-            ORDER BY o.created_at DESC
-        `;
-        const [orders] = await pool.query(query, [vendorId]);
+        let orders = [];
+        try {
+            const query = `
+                SELECT DISTINCT o.*, u.name as customer_name, u.email as customer_email, u.phone as customer_phone
+                FROM coupon_orders o
+                LEFT JOIN users u ON o.user_id = u.id,
+                JSON_TABLE(o.items, '$[*]' COLUMNS(coupon_id INT PATH '$.coupon_id')) AS jt
+                JOIN coupons c ON c.id = jt.coupon_id
+                WHERE c.vendor_id = ?
+                ORDER BY o.created_at DESC
+            `;
+            const [rows] = await pool.query(query, [vendorId]);
+            orders = rows;
+        } catch (queryErr) {
+            // Fallback for database servers that do not support JSON_TABLE
+            const fallbackQuery = `
+                SELECT o.*, u.name as customer_name, u.email as customer_email, u.phone as customer_phone
+                FROM coupon_orders o
+                LEFT JOIN users u ON o.user_id = u.id
+                ORDER BY o.created_at DESC
+            `;
+            const [allOrders] = await pool.query(fallbackQuery);
+            orders = allOrders.filter(order => {
+                const rawItems = typeof order.items === 'string' ? JSON.parse(order.items) : (order.items || []);
+                return rawItems.some(item => vendorCouponIds.has(Number(item.coupon_id)));
+            });
+        }
 
         // Filter items in each order to ONLY include coupons belonging to this vendor
         const parsedOrders = orders
@@ -375,7 +411,12 @@ router.get("/orders/:order_id/issues", async (req, res) => {
             return res.status(401).json({ success: false, message: "No token provided" });
         }
         const token = authHeader.split(' ')[1];
-        const decoded = jwt.verify(token, process.env.JWT_SECRET || 'roameo_secret_key_2024');
+        let decoded;
+        try {
+            decoded = verifyVendorToken(token);
+        } catch (error) {
+            return res.status(401).json({ success: false, message: "Invalid or expired token" });
+        }
         const vendorId = decoded.vendor_id || decoded.id;
 
         const [issues] = await pool.query(

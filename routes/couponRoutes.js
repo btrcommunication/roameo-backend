@@ -7,7 +7,7 @@ const { sendCouponApprovedEmail, sendCouponRejectedEmail } = require("../service
 
 const PUBLIC_BASE_URL = (
     process.env.PUBLIC_BASE_URL ||
-    "https://roameomobileapp.braventra.in"
+    "https://roameoapp.jlpartners.in"
 ).replace(/\/+$/, "");
 
 const UPLOAD_DIR = path.resolve(__dirname, "../uploads/coupons");
@@ -16,7 +16,11 @@ const UPLOAD_DIR = path.resolve(__dirname, "../uploads/coupons");
 const serializeCoupon = (coupon) => {
     if (!coupon) return coupon;
 
-    const image = coupon.banner_image_url || coupon.banner_image;
+    let image = coupon.banner_image_url || coupon.banner_image;
+
+    if (image && typeof image === "string") {
+        image = image.replace(/^https?:\/\/roameomobileapp\.braventra\.in/i, PUBLIC_BASE_URL);
+    }
 
     const imageUrl = !image
         ? null
@@ -47,7 +51,16 @@ const storage = multer.diskStorage({
         const uniqueSuffix =
             Date.now() + "-" + Math.round(Math.random() * 1e9);
 
-        const extension = path.extname(file.originalname).toLowerCase();
+        let extension = path.extname(file.originalname).toLowerCase();
+        if (!extension && file.mimetype) {
+            const mimeMap = {
+                "image/jpeg": ".jpg",
+                "image/png": ".png",
+                "image/webp": ".webp",
+                "image/gif": ".gif",
+            };
+            extension = mimeMap[file.mimetype] || ".jpg";
+        }
 
         cb(null, `coupon-${uniqueSuffix}${extension}`);
     },

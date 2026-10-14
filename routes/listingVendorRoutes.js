@@ -189,7 +189,7 @@ router.post("/login", async (req, res) => {
                 email: vendor.email,
                 name: vendor.name 
             },
-            process.env.JWT_SECRET || "your-secret-key",
+            process.env.JWT_SECRET || "roameo_secret_key_2024",
             { expiresIn: "7d" }
         );
 
